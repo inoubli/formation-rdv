@@ -1,1 +1,31 @@
-<p>mes-rdv works!</p>
+<div class="card mt-3">
+  <div class="card-header bg-info text-white">
+    <h2>Liste des matières</h2>
+  </div>
+  <div class="card-body">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Id Patient</th>
+        <th>Id Praticien</th>
+        <th>Motif</th>
+        <th>Date</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let rdv of list()">
+        <td>{{rdv.idPatient}}</td>
+        <td>{{rdv.idParticien}}</td>
+        <td>{{rdv.motif}}</td>
+        <td>{{rdv.dateRdv}}</td>
+        <td>
+          <div class="btn-group btn-group-sm">
+            <a class="btn btn-primary" (click)="confirm(rdv.id)"><i class="fa fa-edit"></i></a>
+            <a class="btn btn-danger" (click)="cancel(rdv.id)"><i class="fa fa-trash"></i></a>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
