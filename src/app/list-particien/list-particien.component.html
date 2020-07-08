@@ -1,34 +1,39 @@
-<div class="card-body">
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Nom</th>
-                <th>Prenom</th>
-                <th>Lieu de consultation</th>
-                <th>Spécialité</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let praticien of list()">
-                <td>{{praticien.id}}</td>
-                <td>{{praticien.nom}}</td>
-                <td>{{praticien.prenom}}</td>
-                <td>
-                    <select>
-                        <option *ngFor="let lieu of praticien.lieuDeConsultation">{{lieu}}</option>
-                    </select>
 
-                </td>
+  <div class="row" style="margin-top: 25px;">
+    <div class="col-sm-7">
+        <div class="card-header bg-info text-white">
+            <h2>Liste des Particiens</h2>
+          </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nom</th>
+                    <th>Prenom</th>
+                    <th>Lieu de consultation</th>
+                    <th>Spécialité</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let praticien of list()">
+                    <td>{{praticien.id}}</td>
+                    <td>{{praticien.nom}}</td>
+                    <td>{{praticien.prenom}}</td>
+                    <td>
+                        <span class="badge badge-primary" *ngFor="let lieu of praticien.lieuDeConsultation" style="margin-left: 4px;">{{lieu}}</span>
+                    </td>
+    
+                    <td>
+                        <span class="badge badge-primary"  *ngFor="let specialite of praticien.specialites" style="margin-left: 4px;">{{specialite}}</span>
+    
+                    </td>
+    
+                </tr>
+            </tbody>
+        </table>
 
-                <td>
-                    <select>
-                        <option *ngFor="let specialite of praticien.specialites">{{specialite}}</option>
-                    </select>
-
-                </td>
-
-            </tr>
-        </tbody>
-    </table>
-</div>
+    </div>
+    <div class="col-sm-5">
+        <app-mes-rdv></app-mes-rdv>
+    </div>
+    </div>
