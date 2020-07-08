@@ -1,0 +1,34 @@
+<div class="card-body">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Lieu de consultation</th>
+                <th>Spécialité</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let praticien of list()">
+                <td>{{praticien.id}}</td>
+                <td>{{praticien.nom}}</td>
+                <td>{{praticien.prenom}}</td>
+                <td>
+                    <select>
+                        <option *ngFor="let lieu of praticien.lieuDeConsultation">{{lieu}}</option>
+                    </select>
+
+                </td>
+
+                <td>
+                    <select>
+                        <option *ngFor="let specialite of praticien.specialites">{{specialite}}</option>
+                    </select>
+
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
