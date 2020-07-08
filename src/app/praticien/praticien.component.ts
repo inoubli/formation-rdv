@@ -10,6 +10,8 @@ export class PraticienComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+
   }
 
 }
