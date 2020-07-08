@@ -1,44 +1,52 @@
 {
-
     "patient": [
         {
-        "id": "1",
-        "nom": "Eric", 
-        "prenom": "Soltane",
-        "courriel": "eric.s@gmail.com",
-        "idCompte": "001",
-        "rdv":
-            [
+            "id": "1",
+            "nom": "Eric",
+            "prenom": "Soltane",
+            "courriel": "eric.s@gmail.com",
+            "idCompte": "001",
+            "rdvs": [
                 {
-                    "idPatient":"1",
-                    "idParticien":"1",
+                    "idPatient": "1",
+                    "idParticien": "1",
                     "motif": "Mal de dos",
-                    "dateRdv":"01/08/2020",
-                    "confirmer":false
+                    "dateRdv": "01/08/2020",
+                    "confirmer": false
                 }
             ]
-        
         }
     ],
-
     "praticien": [
         {
             "id": "1",
-            "nom": "", 
+            "nom": "",
             "prenom": "",
             "courriel": "",
             "idCompte": "",
-            "rdv":
-            [
+            "rdv": [
                 {
-                    "idPatient":"1",
-                    "idParticien":"1",
+                    "idPatient": "1",
+                    "idParticien": "1",
                     "motif": "Mal de dos",
-                    "dateRdv":"01/08/2020",
-                    "confirmer":false
+                    "dateRdv": "01/08/2020",
+                    "confirmer": false
                 }
-            ]            
+            ],
+            "lieuDeConsultation": [
+                "paris",
+                "toulouse"
+            ],
+            "specialites": [
+                "neurologue",
+                "pédiatrie"
+            ]
         }
-    ]
-
+    ],
+    "compte": {
+        "id": "",
+        "login": "",
+        "password": "",
+        "privilege": ""
+    }
 }
