@@ -18,7 +18,7 @@ export class MesRdvService {
   }
 
   load(): void {
-    this.http.get<Array<Rdv>>('http://localhost:3000/')
+    this.http.get<Array<Rdv>>('http://localhost:3000/rdv')
       .subscribe( mesRdvs => this.mesRdvs = mesRdvs, error => console.log(error));
   }
 }
