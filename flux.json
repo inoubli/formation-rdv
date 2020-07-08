@@ -1,7 +1,6 @@
 {
     "patient": [
         {
-<<<<<<< HEAD
         "id": 1,
         "nom": "Eric", 
         "prenom": "Soltane",
@@ -13,17 +12,6 @@
                     "id":1,
                     "idPatient":1,
                     "idParticien":1,
-=======
-            "id": "1",
-            "nom": "Eric",
-            "prenom": "Soltane",
-            "courriel": "eric.s@gmail.com",
-            "idCompte": "001",
-            "rdvs": [
-                {
-                    "idPatient": "1",
-                    "idParticien": "1",
->>>>>>> 0549ce754135f0b2748b611d662cd6f5a7287efd
                     "motif": "Mal de dos",
                     "dateRdv": "01/08/2020",
                     "confirmer": false
@@ -33,13 +21,8 @@
     ],
     "praticien": [
         {
-<<<<<<< HEAD
             "id": 1,
             "nom": "", 
-=======
-            "id": "1",
-            "nom": "",
->>>>>>> 0549ce754135f0b2748b611d662cd6f5a7287efd
             "prenom": "",
             "courriel": "",
             "idCompte": "",
