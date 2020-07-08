@@ -7,7 +7,23 @@
         "courriel": "eric.s@gmail.com",
         "idCompte": "001",
         "rdv":
-            [1
+            [
+              {
+                "id":1,
+                "idPatient":1,
+                "idPraticien":1,
+                "motif": "Mal de dos",
+                "dateRdv": "01/08/2020",
+                "confirmer": false
+              },
+              {
+                "id":2,
+                "idPatient":1,
+                "idPraticien":1,
+                "motif": "Mal de dos",
+                "dateRdv": "08/08/2020",
+                "confirmer": false
+              }
             ]
         }
     ],
@@ -19,7 +35,22 @@
             "courriel": "",
             "idCompte": "",
             "rdv": [
-              1
+              {
+                "id":1,
+                "idPatient":1,
+                "idPraticien":1,
+                "motif": "Mal de dos",
+                "dateRdv": "01/08/2020",
+                "confirmer": false
+              },
+              {
+                "id":2,
+                "idPatient":1,
+                "idPraticien":1,
+                "motif": "Mal de dos",
+                "dateRdv": "08/08/2020",
+                "confirmer": false
+              }
             ],
             "lieuDeConsultation": [
                 "paris",
@@ -42,7 +73,7 @@
       {
         "id":1,
         "idPatient":1,
-        "idParticien":1,
+        "idPraticien":1,
         "motif": "Mal de dos",
         "dateRdv": "01/08/2020",
         "confirmer": false
@@ -50,7 +81,7 @@
       {
         "id":2,
         "idPatient":1,
-        "idParticien":1,
+        "idPraticien":1,
         "motif": "Mal de dos",
         "dateRdv": "08/08/2020",
         "confirmer": false
