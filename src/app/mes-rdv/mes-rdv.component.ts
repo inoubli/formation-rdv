@@ -19,7 +19,15 @@ export class MesRdvComponent implements OnInit {
   }
 
   confirm(id: number): void {
+    this.mesRdvService.find(id).subscribe( resp => {
+      resp.confirmer = true;
+      this.mesRdvService.update(resp).subscribe( res => this.mesRdvService.load(), error => console.log(error));
+    }, error => console.log(error));
   }
   cancel(id: number): void {
+    this.mesRdvService.find(id).subscribe( resp => {
+      resp.confirmer = false;
+      this.mesRdvService.update(resp).subscribe( res => this.mesRdvService.load(), error => console.log(error));
+    }, error => console.log(error));
   }
 }

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Rdv} from '../model/Rdv';
+import {Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +16,14 @@ export class MesRdvService {
 
   findAll(): Array<Rdv> {
     return this.mesRdvs;
+  }
+
+  find(id): Observable<Rdv> {
+    return this.http.get<Rdv>('http://localhost:3000/rdv/' + id);
+  }
+
+  update(rdv: Rdv): Observable<Rdv> {
+    return this.http.put<Rdv>('http://localhost:3000/rdv/' + rdv.id, rdv);
   }
 
   load(): void {

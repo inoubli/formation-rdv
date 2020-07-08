@@ -10,6 +10,7 @@
         <th>Id Praticien</th>
         <th>Motif</th>
         <th>Date</th>
+        <th>Confirmé</th>
         <th></th>
       </tr>
       </thead>
@@ -19,9 +20,10 @@
         <td>{{rdv.idPraticien}}</td>
         <td>{{rdv.motif}}</td>
         <td>{{rdv.dateRdv}}</td>
+        <td>{{rdv.confirmer}}</td>
         <td>
           <div class="btn-group btn-group-sm">
-            <a class="btn btn-primary" (click)="confirm(rdv.id)"><i class="fa fa-edit"></i></a>
+            <a class="btn btn-primary" (click)="confirm(rdv.id)"><i class="fa fa-check-circle"></i></a>
             <a class="btn btn-danger" (click)="cancel(rdv.id)"><i class="fa fa-trash"></i></a>
           </div>
         </td>
