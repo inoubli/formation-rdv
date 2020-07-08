@@ -1,37 +1,56 @@
 {
     "patient": [
         {
-            "id": "1",
-            "nom": "Eric",
-            "prenom": "Soltane",
-            "courriel": "eric.s@gmail.com",
-            "idCompte": "001",
-            "rdvs": [
-                {
-                    "idPatient": "1",
-                    "idParticien": "1",
-                    "motif": "Mal de dos",
-                    "dateRdv": "01/08/2020",
-                    "confirmer": false
-                }
+        "id": 1,
+        "nom": "Eric",
+        "prenom": "Soltane",
+        "courriel": "eric.s@gmail.com",
+        "idCompte": "001",
+        "rdv":
+            [
+              {
+                "id":1,
+                "idPatient":1,
+                "idPraticien":1,
+                "motif": "Mal de dos",
+                "dateRdv": "01/08/2020",
+                "confirmer": false
+              },
+              {
+                "id":2,
+                "idPatient":1,
+                "idPraticien":1,
+                "motif": "Mal de dos",
+                "dateRdv": "08/08/2020",
+                "confirmer": false
+              }
             ]
         }
     ],
     "praticien": [
         {
-            "id": "1",
+            "id": 1,
             "nom": "",
             "prenom": "",
             "courriel": "",
             "idCompte": "",
             "rdv": [
-                {
-                    "idPatient": "1",
-                    "idParticien": "1",
-                    "motif": "Mal de dos",
-                    "dateRdv": "01/08/2020",
-                    "confirmer": false
-                }
+              {
+                "id":1,
+                "idPatient":1,
+                "idPraticien":1,
+                "motif": "Mal de dos",
+                "dateRdv": "01/08/2020",
+                "confirmer": false
+              },
+              {
+                "id":2,
+                "idPatient":1,
+                "idPraticien":1,
+                "motif": "Mal de dos",
+                "dateRdv": "08/08/2020",
+                "confirmer": false
+              }
             ],
             "lieuDeConsultation": [
                 "paris",
@@ -48,5 +67,24 @@
         "login": "",
         "password": "",
         "privilege": ""
-    }
+    },
+
+    "rdv": [
+      {
+        "id":1,
+        "idPatient":1,
+        "idPraticien":1,
+        "motif": "Mal de dos",
+        "dateRdv": "01/08/2020",
+        "confirmer": false
+      },
+      {
+        "id":2,
+        "idPatient":1,
+        "idPraticien":1,
+        "motif": "Mal de dos",
+        "dateRdv": "08/08/2020",
+        "confirmer": false
+      }
+    ]
 }
