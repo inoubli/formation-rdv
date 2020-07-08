@@ -2,38 +2,24 @@
     "patient": [
         {
         "id": 1,
-        "nom": "Eric", 
+        "nom": "Eric",
         "prenom": "Soltane",
         "courriel": "eric.s@gmail.com",
         "idCompte": "001",
         "rdv":
-            [
-                {   
-                    "id":1,
-                    "idPatient":1,
-                    "idParticien":1,
-                    "motif": "Mal de dos",
-                    "dateRdv": "01/08/2020",
-                    "confirmer": false
-                }
+            [1
             ]
         }
     ],
     "praticien": [
         {
             "id": 1,
-            "nom": "", 
+            "nom": "",
             "prenom": "",
             "courriel": "",
             "idCompte": "",
             "rdv": [
-                {
-                    "idPatient": "1",
-                    "idParticien": "1",
-                    "motif": "Mal de dos",
-                    "dateRdv": "01/08/2020",
-                    "confirmer": false
-                }
+              1
             ],
             "lieuDeConsultation": [
                 "paris",
@@ -50,5 +36,24 @@
         "login": "",
         "password": "",
         "privilege": ""
-    }
+    },
+
+    "rdv": [
+      {
+        "id":1,
+        "idPatient":1,
+        "idParticien":1,
+        "motif": "Mal de dos",
+        "dateRdv": "01/08/2020",
+        "confirmer": false
+      },
+      {
+        "id":2,
+        "idPatient":1,
+        "idParticien":1,
+        "motif": "Mal de dos",
+        "dateRdv": "08/08/2020",
+        "confirmer": false
+      }
+    ]
 }
