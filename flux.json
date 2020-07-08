@@ -2,16 +2,17 @@
 
     "patient": [
         {
-        "id": "1",
+        "id": 1,
         "nom": "Eric", 
         "prenom": "Soltane",
         "courriel": "eric.s@gmail.com",
         "idCompte": "001",
         "rdv":
             [
-                {
-                    "idPatient":"1",
-                    "idParticien":"1",
+                {   
+                    "id":1,
+                    "idPatient":1,
+                    "idParticien":1,
                     "motif": "Mal de dos",
                     "dateRdv":"01/08/2020",
                     "confirmer":false
@@ -23,7 +24,7 @@
 
     "praticien": [
         {
-            "id": "1",
+            "id": 1,
             "nom": "", 
             "prenom": "",
             "courriel": "",
